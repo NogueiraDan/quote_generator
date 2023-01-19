@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height:100vh;
+    background: hsl(217, 19%, 24%);
+    color: #fff;
+    font-family: "Manrope";
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    background: hsl(217, 19%, 38%);
+    margin: 20px 0;
+    padding-top: 20px;
+    border-radius: 20px;
+
+}
+
+/* ID da citação para */
+.container #quoteID{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-top: 5px;
+    font-size: 16px;
+
+}
+
+/* Container da Citação */
+.container .quote{
+    width: 90%;
+    height: 75%;
+    margin: 10px 0;
+    padding: 15px 10px;
+    background: hsl(219, 18%, 31%);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+/* Botão */
+.container #btnGenerate{
+    width: 50px;
+    height: 50px;
+    margin-top: -35px;
+    border: 0;
+    border-radius: 50%;
+    background: hsl(150, 21%, 44%);;
+    border: 1px solid hsl(150, 100%, 66%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Manrope';
+    transition: all 0.3s;
+}
+.container #btnGenerate:hover{
+    box-shadow: 0 0 1.5em hsl(150, 100%, 66%);
+    background: hsl(150, 100%, 66%);
+    color: gray;
+
+}
