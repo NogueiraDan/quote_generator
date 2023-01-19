@@ -18,7 +18,6 @@ function getQuote(){
     return res.json();
 }).then((adviceData)=>{
     let adviceObj = adviceData.slip;
-    console.log(adviceObj);
     quoteID.innerHTML = `ADVICE #${adviceObj.id}`
     resultQuote.innerHTML = `<p>'${adviceObj.advice}'</p>`;
     
